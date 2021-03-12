@@ -42,14 +42,10 @@ html {
     text-align: center;
     padding: 0.2rem 0;
     letter-spacing: 0.1rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.nav-link::before {
-    content: "";
-    position: absolute;
-    width: 150%;
-    height: 5rem 
-}
 
 .nav-link::before {
     content: "";
@@ -59,13 +55,13 @@ html {
     background-color: #d50000;
     left: -20%;
     transform: rotate(-40deg) translateX(-4rem);
-    transform-origin: left-bottom;
+    transform-origin: left bottom;
     opacity: 0.8;
     transition: left 0.3s;
 }
 
 .nav-link:hover::before {
-    left: 100%;
+    left: 110%;
 }
 
 .page-btn {
@@ -93,7 +89,7 @@ html {
     transform: rotate(90deg);
 }
 
-.page-btn-img {
+.page-btn img {
     width: 4rem;
     opacity: 0.4;
     cursor: pointer;
@@ -132,6 +128,7 @@ html {
     border: 0.1rem solid #fff;
     border-radius: 50%;
     margin: 0 0.3rem;
+    transition: background-color 0.3s;
 }
 
 .wrapper {
@@ -146,9 +143,11 @@ section {
     height: 100%;
     position: absolute;
     left: 0; 
+    overflow: hidden;
+    transition: left 1.5s;
 }
 
-.section-5 {
+.section-1 {
     z-index: 50;
 }
 
@@ -178,7 +177,10 @@ section {
     border-bottom: 0.2rem solid #d50000;
     text-align: right;
     user-select: none;
+}
 
+.section-2 {
+    z-index: 40;
 }
 
 .section-2-wrapper {
@@ -224,6 +226,10 @@ section {
     width: 80rem;
 }
 
+.section-3 {
+    z-index: 30;
+}
+
 .section-3-wrapper {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(images/section-3-bg.jpg) center no-repeat;
     background-size: cover;
@@ -253,6 +259,10 @@ section {
     width: 40rem;
     position: absolute;
     opacity: 0.7;
+}
+
+.section-4 {
+    z-index: 20;
 }
 
 .section-4-wrapper {
@@ -287,6 +297,10 @@ section {
     border: 0.1rem solid #fff;
     padding: 1rem;
     opacity: 0.7;
+}
+
+.section-5 {
+    z-index: 10;
 }
 
 
