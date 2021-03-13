@@ -131,6 +131,10 @@ html {
     transition: background-color 0.3s;
 }
 
+.circle-1 {
+    background-color: #ddd;
+}
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -236,6 +240,8 @@ section {
     display: flex; 
     align-items: center;
     justify-content: center;
+    transition: opacity 1.5s;
+
 }
 
 .section-3-heading {
@@ -259,6 +265,13 @@ section {
     width: 40rem;
     position: absolute;
     opacity: 0.7;
+    transition: all 1.5s;
+}
+
+.grapes-img:hover {
+    opacity: 1;
+    transform: scale(2);
+
 }
 
 .section-4 {
@@ -340,3 +353,97 @@ section {
     color: #eee;
     letter-spacing: 0.2rem;
 }
+
+@media (max-width: 1600px) {
+    .sale-bag {
+        width: 35rem;
+    }
+    .wine-bottle {
+      width: 65rem;  
+    }
+    .footer-img {
+        width: 45rem;
+        margin: 0 12rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .sale-bag {
+        width: 30rem;
+    }
+    .wine-bottle {
+      width: 60rem;  
+    }
+    .footer-img {
+        width: 35rem;
+        margin: 0 10rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-lin {
+        margin: 0 1.5rem;
+    }
+    .section-1-heading-wrapper {
+        width: 80%;
+    }
+    .section-1-heading {
+        font-size: 8rem;
+    }
+    .sale-bag {
+        width: 25rem;
+    }
+    .sale-btn {
+        width: 15rem;
+        height: 4rem;
+        font-size: 1.7rem;
+    }
+    .wine-bottle {
+        width: 50rem;
+    }
+
+    .footer-img {
+        width: 25rem;
+        margin: 0 7rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    .section-2-wrapper {
+        flex-direction: column;
+    }
+
+    .sale {
+        order: 1;
+    }
+
+    .section-3-heading {
+        font-size: 12rem;
+    }
+    .frame-img {
+        width: 70rem;
+    }
+
+    .grapes-img {
+        width: 25rem;
+    }
+    .section-4-heading {
+        font-size: 8rem;
+    }
+    .new-wines-img {
+        width: 60rem;
+    }
+    .section-5-wrapper {
+        flex-direction: column;
+    }
+    .footer-img {
+        width: 20rem;
+        order: 1;
+    }
+    .footer-list {
+        width: 20rem;
+        margin: 2rem auto;
+    }
+}
+
+/* Left off at the 8:56 mark of the last video*/
