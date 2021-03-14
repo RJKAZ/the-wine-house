@@ -3,13 +3,13 @@ let counter2 = 1;
 let bool = true;
 
 const sections = document.querySelectorAll("section");
-const progress = document.querySelector('.progress h2');
+const progress = document.querySelector(".progress h2");
 const circles = document.querySelectorAll(".circle");
 const menu = document.querySelector(".menu");
-const section1wrapper = document.querySelector('section-1-wrapper')
-const section5wrapper = document.querySelector('section-5-wrapper')
+const section1wrapper = document.querySelector(".section-1-wrapper")
+const section5wrapper = document.querySelector(".section-5-wrapper")
 
-section1wrapper.style.transform = 'scale(1)'
+section1wrapper.style.transform = "scale(1)";
 
 
 const progressCounter = () => {
@@ -119,17 +119,15 @@ document.querySelector('.right-btn').addEventListener('click', () => {
     }
 });
 
-document.querySelector('.grapes-img').addEventListener('mouseover', () => {
-    document.querySelector('.section-3-wrapper');
-    style.opacity = ".5";
+document.querySelector(".grapes-img").addEventListener("mouseover", () => {
+    document.querySelector(".section-3-wrapper").style.opacity = ".5";
 });
 
 document.querySelector('.grapes-img').addEventListener('mouseout', () => {
-    document.querySelector('.section-3-wrapper');
-    style.opacity = "1";
+    document.querySelector('.section-3-wrapper').style.opacity = "1";
 });
 
-menubar.addEventListener('click', () => {
+menu.addEventListener('click', () => {
     document.querySelector('.navbar').classList.toggle("change");
 
 })

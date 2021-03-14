@@ -237,6 +237,7 @@ section {
 
 .section-3 {
     z-index: 30;
+    background-color: #000;
 }
 
 .section-3-wrapper {
@@ -245,8 +246,6 @@ section {
     display: flex; 
     align-items: center;
     justify-content: center;
-    transition: opacity 1.5s;
-
 }
 
 .section-3-heading {
@@ -423,7 +422,6 @@ section {
         display: block;
         width: 4rem;
         height: 2.5rem;
-        background-color: #fff;
         position: absolute;
         top: 1rem;
         right: 2rem;
