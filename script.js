@@ -6,6 +6,7 @@ const sections = document.querySelectorAll("section");
 const progress = document.querySelector('.progress h2');
 const circles = document.querySelectorAll(".circle");
 
+
 const progressCounter = () => {
     progress.textContent = `${counter2}/${sections.length}`;
 
@@ -105,3 +106,8 @@ document.querySelector('.grapes-img').addEventListener('mouseout', () => {
     document.querySelector('.section-3-wrapper');
     style.opacity = "1";
 });
+
+menubar.addEventListener('click', () => {
+    document.querySelector('.navbar').classList.toggle("change");
+
+})
